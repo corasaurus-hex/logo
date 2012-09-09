@@ -30,5 +30,6 @@ func main() {
 	command.Stderr = os.Stderr
 	if error := command.Run(); error != nil {
 		fmt.Println(error)
+		os.Exit(1)
 	}
 }
