@@ -12,6 +12,14 @@ Heavily inspired by [Dave Cheney's gogo](https://github.com/davecheney/gogo), bu
 
 The command to use logo is `logo`. `logo` can replace any go command, so use it just like you would use `go`.
 
+Instead of the default `go get` which would install in your global GOPATH:
+
+`go get github.com/corasaurus-hex/someproject`
+
+You would use `logo get` which will install it in your current directory:
+
+`logo get github.com/corasaurus-hex/someproject`
+
 ## How it works
 
 1. Set GOPATH to the current directory
@@ -36,4 +44,3 @@ The second hack is painful all the time. Every go command you execute that needs
 Either of these solutions would work much better if they were automated. The first is difficult to automate, the second is easy.
 
 logo automates the manipulation of GOPATH to run go commands with the current directory as the GOPATH. That's it.
-
